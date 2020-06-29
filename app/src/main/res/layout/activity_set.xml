@@ -102,7 +102,7 @@
         app:layout_constraintRight_toRightOf="@+id/tvAuthor"
         android:gravity="center_vertical"
         android:layout_marginRight="50dp"
-        android:text="zs_king"
+        android:text="xfy_c"
         style="@style/text_2"/>
     <TextView
         android:layout_width="match_parent"
