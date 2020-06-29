@@ -10,8 +10,8 @@
     <string name="dialog_title">提示</string>
     <string name="dialog_cancel">取消</string>
     <string name="dialog_author">关于作者</string>
-    <string name="dialog_wechat">微 信: zszsking</string>
-    <string name="dialog_email">邮 箱: 495968956@qq.com</string>
+    <string name="dialog_wechat">微 信: wxid-13148023520</string>
+    <string name="dialog_email">邮 箱: 1031256230@qq.com</string>
     <string name="dialog_js">简 书: https://www.jianshu.com/u/274367e58472</string>
 
     <string name="dialog_copy_wechat" translatable="false">zszsking</string>

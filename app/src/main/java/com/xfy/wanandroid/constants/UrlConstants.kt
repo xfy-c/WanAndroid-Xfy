@@ -9,7 +9,7 @@ object UrlConstants {
     /**
      * app github
      */
-    const val APP_GITHUB = "https://github.com/zskingking/WanAndroid-ZS"
+    const val APP_GITHUB = "https://github.com/xfy-c/WanAndroid-Xfy"
 
     /**
      * wan android 官网
