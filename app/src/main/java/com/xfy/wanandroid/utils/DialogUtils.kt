@@ -11,7 +11,7 @@ import com.xfy.wanandroid.proxy.IConfirmClickCallBack
 
 /**
  * des 对话框代理类，对外暴露使用接口，将框架与业务进行隔离
- * @author zs
+ * @author xfy
  * @date 2020-03-12
  */
 class DialogUtils {

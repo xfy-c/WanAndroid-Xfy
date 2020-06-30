@@ -39,7 +39,7 @@ import org.greenrobot.eventbus.ThreadMode
 /**
  * 首页
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-09
  */
 class HomeFragment : AppLazyFragment<HomeContract.Presenter<HomeContract.View>>() ,BGABanner.Adapter<ImageView?, String?>

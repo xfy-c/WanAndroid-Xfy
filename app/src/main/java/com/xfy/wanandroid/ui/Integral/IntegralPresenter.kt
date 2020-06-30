@@ -10,7 +10,7 @@ import io.reactivex.schedulers.Schedulers
 
 /**
  * des 积分
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 class IntegralPresenter(view:IntegralContract.View): BasePresenter<IntegralContract.View>(view)

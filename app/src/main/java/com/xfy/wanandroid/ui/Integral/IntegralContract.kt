@@ -7,7 +7,7 @@ import com.xfy.wanandroid.entity.IntegralRecordEntity
 
 /**
  * des 积分
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 interface IntegralContract {

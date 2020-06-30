@@ -9,7 +9,7 @@ import com.xfy.wanandroid.utils.AppManager
 
 /**
  * des 主工程懒加载BaseFragment
- * @author zs
+ * @author xfy
  * @date 2020-04-24
  */
 abstract class AppLazyFragment<P: IBasePresenter<*>>:LazyFragment<P>() {

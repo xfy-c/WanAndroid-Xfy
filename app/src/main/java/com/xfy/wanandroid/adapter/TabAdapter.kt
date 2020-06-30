@@ -17,7 +17,7 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.Li
 /**
  * tab适配器
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-14
  */
 class TabAdapter(tabList:MutableList<String>) : CommonNavigatorAdapter(){

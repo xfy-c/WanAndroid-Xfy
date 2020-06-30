@@ -13,7 +13,7 @@ import com.xfy.wanandroid.R
 /**
  * des 图片加载代理类
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-14
  */
 class ImageLoad{

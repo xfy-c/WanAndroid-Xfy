@@ -7,7 +7,7 @@ import com.xfy.wanandroid.entity.NavigationEntity
 
 /**
  * des 导航列表
- * @author zs
+ * @author xfy
  * @date 2020-03-16
  */
 interface NavigationContract {

@@ -6,7 +6,7 @@ import com.xfy.wanandroid.entity.ArticleEntity
 
 /**
  * des 体系对应的文章
- * @author zs
+ * @author xfy
  * @date 2020-03-18
  */
 interface SystemContract {

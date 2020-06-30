@@ -6,7 +6,7 @@ import com.example.baselibrary.BaseApplication;
 
 /**
  * des toast工具类
- * @author zs
+ * @author xfy
  * @date 2020-03-10
  */
 public class ToastUtils {

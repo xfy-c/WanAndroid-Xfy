@@ -10,7 +10,7 @@ import com.scwang.smartrefresh.layout.footer.ClassicsFooter
 
 /**
  * des app
- * @author zs
+ * @author xfy
  * @date 2020-03-05
  */
 class WanAndroidApplication : BaseApplication() {

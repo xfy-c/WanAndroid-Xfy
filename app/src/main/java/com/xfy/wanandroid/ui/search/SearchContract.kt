@@ -6,7 +6,7 @@ import com.xfy.wanandroid.entity.ArticleEntity
 
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-15
  */
 interface SearchContract {

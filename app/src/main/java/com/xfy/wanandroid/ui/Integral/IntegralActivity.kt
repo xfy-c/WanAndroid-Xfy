@@ -22,7 +22,7 @@ import com.example.baselibrary.utils.ToastUtils
 
 /**
  * des 积分
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 class IntegralActivity : AppBaseActivity<IntegralContract.Presenter<IntegralContract.View>>()

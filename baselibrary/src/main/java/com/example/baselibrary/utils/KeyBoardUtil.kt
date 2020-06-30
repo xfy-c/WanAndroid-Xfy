@@ -5,7 +5,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-18
  */
 class KeyBoardUtil private constructor() {

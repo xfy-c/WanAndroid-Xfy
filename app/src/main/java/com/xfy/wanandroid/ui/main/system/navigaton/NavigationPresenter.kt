@@ -11,7 +11,7 @@ import io.reactivex.schedulers.Schedulers
 
 /**
  * des 导航
- * @author zs
+ * @author xfy
  * @date 2020-03-16
  */
 class NavigationPresenter (view: NavigationContract.View): BasePresenter<NavigationContract.View>(view)

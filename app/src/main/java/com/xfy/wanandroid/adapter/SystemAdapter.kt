@@ -8,7 +8,7 @@ import com.xfy.wanandroid.entity.SystemListEntity
 
 /**
  * 体系 适配器
- * @author zs
+ * @author xfy
  * @date 2020-03-16
  */
 class SystemAdapter(layoutId:Int) :BaseQuickAdapter<SystemListEntity,BaseViewHolder>(layoutId){

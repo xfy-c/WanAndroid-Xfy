@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_register.*
 
 
 /**
- * @author zs
+ * @author xfy
  * @date
  */
 class RegisterActivity : AppBaseActivity<RegisterContract.Presenter<RegisterContract.View>>()

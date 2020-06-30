@@ -4,7 +4,7 @@ import android.content.Context
 import com.example.baselibrary.BaseApplication
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-09
  */
 object UIUtils {

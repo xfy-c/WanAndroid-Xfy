@@ -2,7 +2,7 @@ package com.xfy.wanandroid.entity
 
 /**
  * des 我的文章
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 class MyArticleEntity {

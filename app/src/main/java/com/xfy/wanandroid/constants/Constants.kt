@@ -3,7 +3,7 @@ package com.xfy.wanandroid.constants
 /**
  * des 存储常量
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-09
  */
 object Constants {

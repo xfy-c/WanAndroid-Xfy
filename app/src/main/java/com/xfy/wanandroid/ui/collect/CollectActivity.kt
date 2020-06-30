@@ -25,7 +25,7 @@ import kotlinx.android.synthetic.main.activity_collect.smartRefresh
 
 /**
  * 收藏
- * @author zs
+ * @author xfy
  * @date 2020-03-13
  */
 class CollectActivity : AppBaseActivity<CollectContract.Presenter<CollectContract.View>>(),CollectContract.View

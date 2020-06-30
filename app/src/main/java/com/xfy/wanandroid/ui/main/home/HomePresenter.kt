@@ -10,7 +10,7 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-08
  */
 class HomePresenter(view: HomeContract.View):

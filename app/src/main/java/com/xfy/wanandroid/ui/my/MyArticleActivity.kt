@@ -30,7 +30,7 @@ import org.greenrobot.eventbus.ThreadMode
 
 /**
  * 我的文章
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 class MyArticleActivity : AppBaseActivity<MyArticleContract.Presenter<MyArticleContract.View>>()

@@ -19,7 +19,7 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigat
 
 /**
  * des 体系
- * @author zs
+ * @author xfy
  * @date 2020-03-16
  */
 class SystemFragment : AppBaseFragment<IBasePresenter<*>>(),OnTabClickListener {

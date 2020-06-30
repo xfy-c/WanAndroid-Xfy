@@ -12,7 +12,7 @@ import com.xfy.wanandroid.weight.ReloadListener
 /**
  * des 辅助站位图
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-12
  */
 class LoadingTip : RelativeLayout {

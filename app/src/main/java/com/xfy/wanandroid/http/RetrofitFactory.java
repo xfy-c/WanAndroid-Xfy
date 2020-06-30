@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * des Retrofit工厂类
- * @author zs
+ * @author xfy
  * @date 2020-03-05
  */
 class RetrofitFactory {

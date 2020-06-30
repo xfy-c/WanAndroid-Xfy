@@ -9,7 +9,7 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-15
  */
 class SearchPresenter(view: SearchContract.View):

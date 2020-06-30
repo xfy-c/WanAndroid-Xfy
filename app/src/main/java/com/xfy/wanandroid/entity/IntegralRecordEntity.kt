@@ -2,7 +2,7 @@ package com.xfy.wanandroid.entity
 
 /**
  * des 获取积分记录
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 class IntegralRecordEntity {

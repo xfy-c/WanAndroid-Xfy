@@ -11,7 +11,7 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-12
  */
 class MinePresenter(view: MineContract.View):BasePresenter<MineContract.View> (view),

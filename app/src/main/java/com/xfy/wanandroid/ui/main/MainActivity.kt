@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 /**
  * activity基础类
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-07
  */
 class MainActivity : AppBaseActivity<IBasePresenter<*>>(),

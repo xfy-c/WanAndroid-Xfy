@@ -13,7 +13,7 @@ import java.io.Serializable
 /**
  * SharePreference封装
  *
- * @author zs
+ * @author xfy
  */
 object PrefUtils {
 

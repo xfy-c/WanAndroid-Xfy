@@ -4,7 +4,7 @@ import com.example.baselibrary.base.IBasePresenter
 import com.example.baselibrary.base.IBaseView
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-18
  */
 interface ShareContract {

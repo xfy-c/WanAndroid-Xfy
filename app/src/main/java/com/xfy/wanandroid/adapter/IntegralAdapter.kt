@@ -7,7 +7,7 @@ import com.xfy.wanandroid.entity.IntegralRecordEntity
 
 /**
  * 积分增加记录
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 class IntegralAdapter(layoutId:Int) : BaseQuickAdapter<IntegralRecordEntity.DatasBean, BaseViewHolder>(layoutId) {

@@ -12,7 +12,7 @@ import com.xfy.wanandroid.entity.CollectEntity
 /**
  * des 收藏适配器
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-13
  */
 class CollectAdapter(layoutId:Int):BaseQuickAdapter<CollectEntity.DatasBean,BaseViewHolder>(layoutId){

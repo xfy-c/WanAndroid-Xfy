@@ -15,7 +15,7 @@ import java.lang.reflect.ParameterizedType
 /**
  * des 给Response脱壳,对服务器错误统一处理
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-13
  */
 abstract class HttpDefaultObserver<T> :Observer<BaseResponse<T>> {

@@ -21,7 +21,7 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigat
 /**
  * 项目/公众号界面
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-14
  */
 class TabFragment : AppBaseFragment<TabContract.Presenter<TabContract.View>>()

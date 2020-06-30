@@ -6,7 +6,7 @@ import com.xfy.wanandroid.entity.RankEntity
 
 /**
  * des 积分排行榜
- * @author zs
+ * @author xfy
  * @date 2020-03-16
  */
 interface RankContract {

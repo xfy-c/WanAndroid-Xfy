@@ -9,7 +9,7 @@ import com.xfy.wanandroid.entity.NavigationEntity
 
 /**
  * 导航 适配器
- * @author zs
+ * @author xfy
  * @date 2020-03-16
  */
 class NavigationAdapter (layoutId:Int) : BaseQuickAdapter<NavigationEntity, BaseViewHolder>(layoutId){

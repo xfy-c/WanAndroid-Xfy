@@ -8,7 +8,7 @@ import com.example.baselibrary.utils.StatusUtils
 
 /**
  * 基于mvp
- * @author zs
+ * @author xfy
  * @date 2020-04-24修改
  */
 abstract class BaseActivity<P: IBasePresenter<*>> : AppCompatActivity() {

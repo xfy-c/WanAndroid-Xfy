@@ -5,7 +5,7 @@ import com.example.baselibrary.base.IBaseView
 import com.xfy.wanandroid.entity.ArticleEntity
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-14
  */
 interface TabListContract {

@@ -5,7 +5,7 @@ import com.example.baselibrary.base.IBaseView
 import com.xfy.wanandroid.entity.MyArticleEntity
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 interface MyArticleContract {

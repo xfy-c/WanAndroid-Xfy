@@ -12,7 +12,7 @@ import com.example.baselibrary.utils.ToastUtils
 /**
  * des app管理类
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-12
  */
 class AppManager {

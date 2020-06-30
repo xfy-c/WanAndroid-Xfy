@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_share_articel.*
 
 /**
  * 分享文章
- * @author zs
+ * @author xfy
  * @date 2020-03-18
  */
 class ShareArticleActivity : AppBaseActivity<ShareContract.Presenter<ShareContract.View>>(),

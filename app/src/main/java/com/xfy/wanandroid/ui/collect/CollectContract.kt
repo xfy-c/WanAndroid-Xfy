@@ -5,7 +5,7 @@ import com.example.baselibrary.base.IBaseView
 import com.xfy.wanandroid.entity.CollectEntity
 
 /**
- * @author zs
+ * @author xfy
  * @date 2020-03-13
  */
 interface CollectContract {

@@ -9,7 +9,7 @@ import io.reactivex.schedulers.Schedulers
 
 /**
  * des 注册
- * @author zs
+ * @author xfy
  * @date 2020-03-18
  */
 class RegisterPresenter(view:RegisterContract.View):BasePresenter<RegisterContract.View>(view)

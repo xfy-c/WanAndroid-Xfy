@@ -15,7 +15,7 @@ import com.xfy.wanandroid.proxy.ImageLoad
 
 /**
  * 文章适配器
- * @author zs
+ * @author xfy
  * @date 2020-03-16修改
  */
 class ArticleAdapter(list:MutableList<ArticleEntity.DatasBean>)

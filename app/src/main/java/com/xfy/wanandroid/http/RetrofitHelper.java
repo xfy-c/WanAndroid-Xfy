@@ -3,7 +3,7 @@ package com.xfy.wanandroid.http;
 /**
  * des 实例化Retrofit,获取ApiService
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-05
  */
 public class RetrofitHelper {

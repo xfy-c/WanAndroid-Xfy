@@ -4,7 +4,7 @@ import java.io.Serializable
 
 /**
  * des 个人积分
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 class IntegralEntity: Serializable {

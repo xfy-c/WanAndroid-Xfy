@@ -16,6 +16,7 @@ import com.xfy.wanandroid.adapter.OnCollectClickListener
 import com.xfy.wanandroid.base.AppLazyFragment
 import com.xfy.wanandroid.constants.Constants
 import com.xfy.wanandroid.entity.ArticleEntity
+import com.xfy.wanandroid.ui.login.LoginActivity
 import com.xfy.wanandroid.ui.web.WebActivity
 import com.xfy.wanandroid.utils.AppManager
 import com.xfy.wanandroid.weight.ReloadListener
@@ -24,7 +25,7 @@ import kotlinx.android.synthetic.main.fragment_article_list.*
 /**
  * des 项目/公众号列表
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-14
  */
 class TabListFragment : AppLazyFragment<TabListContract.Presenter<TabListContract.View>>()
@@ -111,6 +112,8 @@ class TabListFragment : AppLazyFragment<TabListContract.Presenter<TabListContrac
     override fun onCollectClick(helper: BaseViewHolder, position: Int) {
         if (!AppManager.isLogin()) {
             ToastUtils.show("请先登录")
+            intent(LoginActivity::class.java,false)
+
             return
         }
         if (position<projectList.size){

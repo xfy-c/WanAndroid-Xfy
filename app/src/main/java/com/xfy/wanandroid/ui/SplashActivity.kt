@@ -27,7 +27,7 @@ import pub.devrel.easypermissions.EasyPermissions.PermissionCallbacks
  * 开屏页
  * 权限：https://www.cnblogs.com/blosaa/p/9584348.html
  *
- * @author zs
+ * @author xfy
  * @date 2020-03-07
  */
 class SplashActivity : AppBaseActivity<IBasePresenter<*>>(), PermissionCallbacks {

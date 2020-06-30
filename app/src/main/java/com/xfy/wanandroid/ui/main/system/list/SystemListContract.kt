@@ -6,7 +6,7 @@ import com.xfy.wanandroid.entity.SystemListEntity
 
 /**
  * des体系列表
- * @author zs
+ * @author xfy
  * @date 2020-03-16
  */
 interface SystemListContract {

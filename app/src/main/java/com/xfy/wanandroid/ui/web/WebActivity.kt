@@ -18,7 +18,7 @@ import com.xfy.wanandroid.R
 
 /**
  * 展示h5
- * @author zs
+ * @author xfy
  * @date 2020-03-16修改
  */
 class WebActivity : AppBaseActivity<IBasePresenter<*>>() {

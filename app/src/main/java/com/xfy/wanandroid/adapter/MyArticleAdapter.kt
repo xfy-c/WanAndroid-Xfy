@@ -9,7 +9,7 @@ import com.xfy.wanandroid.entity.ArticleEntity
 
 /**
  * 我的文章适配器
- * @author zs
+ * @author xfy
  * @date 2020-03-17
  */
 class MyArticleAdapter(layoutId:Int):BaseQuickAdapter<ArticleEntity.DatasBean,BaseViewHolder>(layoutId) {

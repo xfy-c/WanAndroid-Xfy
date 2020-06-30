@@ -4,7 +4,7 @@ import android.view.View
 
 /**
  * des tab点击事件
- * @author zs
+ * @author xfy
  * @date 2020-03-14
  */
 interface OnTabClickListener {
