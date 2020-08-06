@@ -7,13 +7,14 @@ import com.example.baselibrary.BaseApplication
 
 class NetUtils {
 
-    companion object{
+    companion object {
         /**
          * 当前网络是否可用
          */
         val NETWORK_ENABLE: Boolean
             get() {
-                val connManager = BaseApplication.getContext().getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+                val connManager = BaseApplication.getContext()
+                    .getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
                 val info = connManager.activeNetworkInfo
                 return info.state == NetworkInfo.State.CONNECTED
             }
