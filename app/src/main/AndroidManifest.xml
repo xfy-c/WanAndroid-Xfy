@@ -34,7 +34,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- 设置 -->
+        </activity>
+        <!-- 设置 -->
         <activity
             android:name="com.xfy.wanandroid.ui.set.SetActivity"
             android:launchMode="singleTask"
