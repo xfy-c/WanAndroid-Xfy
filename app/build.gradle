@@ -6,13 +6,21 @@ apply plugin: 'org.greenrobot.greendao'
 android {
     signingConfigs {
         debug {
+<<<<<<< HEAD
             storeFile file('C:/Users/xfy/Desktop/workspace/android.jks')
+=======
+            storeFile file('C:\\Users\\86186\\Desktop\\workspace\\kotlin.jks')
+>>>>>>> c94892d401c178dabfe9ae91c7d4e669244f462b
             storePassword 'android'
             keyAlias 'android'
             keyPassword 'android'
         }
         release {
+<<<<<<< HEAD
             storeFile file('C:/Users/xfy/Desktop/workspace/android.jks')
+=======
+            storeFile file('C:\\Users\\86186\\Desktop\\workspace\\kotlin.jks')
+>>>>>>> c94892d401c178dabfe9ae91c7d4e669244f462b
             storePassword 'android'
             keyAlias 'android'
             keyPassword 'android'
