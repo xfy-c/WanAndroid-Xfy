@@ -6,13 +6,13 @@ apply plugin: 'org.greenrobot.greendao'
 android {
     signingConfigs {
         debug {
-            storeFile file('C:\\Users\\86186\\Desktop\\workspace\\kotlin.jks')
+            storeFile file('C:/Users/xfy/Desktop/workspace/android.jks')
             storePassword 'android'
             keyAlias 'android'
             keyPassword 'android'
         }
         release {
-            storeFile file('C:\\Users\\86186\\Desktop\\workspace\\kotlin.jks')
+            storeFile file('C:/Users/xfy/Desktop/workspace/android.jks')
             storePassword 'android'
             keyAlias 'android'
             keyPassword 'android'
@@ -36,16 +36,6 @@ android {
             targetCompatibility JavaVersion.VERSION_1_8
         }
     }
-
-//    //配置keystore签名
-//    signingConfigs {
-//        release {
-//            storeFile file('/Users/edz/StudioProjects/wanandroid.jks')
-//            storePassword "zs120909.."
-//            keyAlias 'wanandroid'
-//            keyPassword "zs120909.."
-//        }
-//    }
 
     buildTypes {
         release {
