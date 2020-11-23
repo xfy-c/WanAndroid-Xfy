@@ -6,6 +6,7 @@ import com.example.baselibrary.utils.ColorUtils
 import com.scwang.smartrefresh.header.MaterialHeader
 import com.scwang.smartrefresh.layout.SmartRefreshLayout
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter
+import com.tencent.mmkv.MMKV
 
 
 /**
@@ -14,6 +15,11 @@ import com.scwang.smartrefresh.layout.footer.ClassicsFooter
  * @date 2020-03-05
  */
 class WanAndroidApplication : BaseApplication() {
+    override fun onCreate() {
+        super.onCreate()
+        MMKV.initialize(this)
+    }
+
     companion object {
         //static 代码段可以防止内存泄露
         init {
@@ -38,6 +44,7 @@ class WanAndroidApplication : BaseApplication() {
                 footer.setBackgroundColor(ColorUtils.parseColor(R.color.white))
                 footer
             }
+
         }
     }
 }

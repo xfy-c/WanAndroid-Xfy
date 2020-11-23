@@ -2,7 +2,7 @@ package com.xfy.wanandroid.ui.main.mine
 
 import android.os.Bundle
 import android.view.View
-import com.example.baselibrary.utils.PrefUtils
+import com.example.baselibrary.utils.MmkvUtils
 import com.example.baselibrary.utils.ToastUtils
 import com.xfy.wanandroid.R
 import com.xfy.wanandroid.base.AppLazyFragment
@@ -41,9 +41,9 @@ class MineFragment : AppLazyFragment<MineContract.Presenter<MineContract.View>>(
 
     override fun lazyInit() {
         //先判断数据是否为空，然后再强转，否则会出异常
-        PrefUtils.getObject(Constants.INTEGRAL_INFO)?.let {
+        MmkvUtils.decodeParcelable(Constants.INTEGRAL_INFO, IntegralEntity::class.java)?.let {
             //先从本地获取积分，获取不到再通过网络获取
-            integralEntity = it as IntegralEntity?
+            integralEntity = it
         }
         if (integralEntity==null){
             if (AppManager.isLogin()) {
@@ -137,7 +137,7 @@ class MineFragment : AppLazyFragment<MineContract.Presenter<MineContract.View>>(
     override fun onDestroy() {
         super.onDestroy()
         //设置积分为空，下次进入界面重新请求
-        PrefUtils.removeKey(Constants.INTEGRAL_INFO)
+        MmkvUtils.removeKey(Constants.INTEGRAL_INFO)
         EventBus.getDefault().unregister(this)
     }
 
@@ -145,7 +145,7 @@ class MineFragment : AppLazyFragment<MineContract.Presenter<MineContract.View>>(
      * 登陆消息
      */
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public fun loginEvent(loginEvent: LoginEvent){
+    fun loginEvent(loginEvent: LoginEvent) {
         presenter?.loadIntegral()
     }
 
@@ -153,7 +153,7 @@ class MineFragment : AppLazyFragment<MineContract.Presenter<MineContract.View>>(
      * 退出消息
      */
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public fun logoutEvent(loginEvent: LogoutEvent){
+    fun logoutEvent(loginEvent: LogoutEvent) {
         tvUserName.text = "请先登录"
         tvId.text = "--"
         tvRanking.text = "0"

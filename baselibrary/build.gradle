@@ -59,5 +59,7 @@ dependencies {
     api "pub.devrel:easypermissions:$rootProject.ext.permissionVersion"
     api "com.github.donkingliang:LabelsView:$rootProject.ext.labelsViewVersion"
     api "com.github.franmontiel:PersistentCookieJar:$rootProject.ext.cookieVersion"
+    api"com.tencent:mmkv-static:$rootProject.ext.mmkvVersion"
+
 
 }

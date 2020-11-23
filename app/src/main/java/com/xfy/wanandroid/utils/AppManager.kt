@@ -1,12 +1,12 @@
 package com.xfy.wanandroid.utils
 
+import android.content.ClipboardManager
+import android.content.Context
+import com.example.baselibrary.utils.MmkvUtils
+import com.example.baselibrary.utils.ToastUtils
 import com.xfy.wanandroid.constants.Constants
 import com.xfy.wanandroid.event.LogoutEvent
 import org.greenrobot.eventbus.EventBus
-import android.content.ClipboardManager
-import android.content.Context
-import com.example.baselibrary.utils.PrefUtils
-import com.example.baselibrary.utils.ToastUtils
 
 
 /**
@@ -21,7 +21,7 @@ class AppManager {
          * 登录状态
          */
         fun isLogin():Boolean {
-            return PrefUtils.getBoolean(Constants.LOGIN, false)
+            return MmkvUtils.decodeBoolean(Constants.LOGIN)!!
         }
 
         /**
@@ -30,8 +30,8 @@ class AppManager {
         fun resetUser() {
             //发送退出登录消息
             EventBus.getDefault().post(LogoutEvent())
-            PrefUtils.setBoolean(Constants.LOGIN, false)
-            PrefUtils.removeKey(Constants.USER_INFO)
+            MmkvUtils.encode(Constants.LOGIN, false)
+            MmkvUtils.removeKey(Constants.USER_INFO)
         }
 
         /**

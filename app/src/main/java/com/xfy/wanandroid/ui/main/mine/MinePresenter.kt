@@ -1,7 +1,7 @@
 package com.xfy.wanandroid.ui.main.mine
 
-import com.example.baselibrary.utils.PrefUtils
 import com.example.baselibrary.base.BasePresenter
+import com.example.baselibrary.utils.MmkvUtils
 import com.xfy.wanandroid.constants.Constants
 import com.xfy.wanandroid.entity.IntegralEntity
 import com.xfy.wanandroid.http.HttpDefaultObserver
@@ -23,13 +23,14 @@ class MinePresenter(view: MineContract.View):BasePresenter<MineContract.View> (v
             .getIntegral()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe(object : HttpDefaultObserver<IntegralEntity>(){
+            .subscribe(object : HttpDefaultObserver<IntegralEntity>() {
                 override fun disposable(d: Disposable) {
                     addSubscribe(d)
                 }
 
                 override fun onSuccess(t: IntegralEntity) {
-                    PrefUtils.setObject(Constants.INTEGRAL_INFO,t)
+//                    PrefUtils.setObject(Constants.INTEGRAL_INFO,t)
+                    MmkvUtils.encode(Constants.INTEGRAL_INFO, t)
                     view?.showIntegral(t)
                 }
 

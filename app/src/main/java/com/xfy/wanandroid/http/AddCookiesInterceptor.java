@@ -1,6 +1,6 @@
 package com.xfy.wanandroid.http;
 
-import com.example.baselibrary.utils.PrefUtils;
+import com.example.baselibrary.utils.MmkvUtils;
 import com.xfy.wanandroid.constants.Constants;
 
 import java.io.IOException;
@@ -20,7 +20,7 @@ public class AddCookiesInterceptor implements Interceptor {
     @Override
     public Response intercept(Chain chain) throws IOException {
         Request.Builder builder = chain.request().newBuilder();
-        HashSet<String> cookies = (HashSet<String>) PrefUtils.INSTANCE.getHashSet(Constants.COOKIE);
+        HashSet<String> cookies = (HashSet<String>) MmkvUtils.INSTANCE.decodeStringSet(Constants.COOKIE);
         if (cookies != null) {
             for (String cookie : cookies) {
                 builder.addHeader("Cookie", cookie);

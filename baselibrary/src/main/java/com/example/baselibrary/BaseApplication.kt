@@ -9,6 +9,7 @@ open class BaseApplication :Application() {
     override fun onCreate() {
         super.onCreate()
         baseApplication = this
+
     }
 
     companion object{

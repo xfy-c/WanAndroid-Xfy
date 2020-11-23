@@ -1,26 +1,26 @@
 package com.xfy.wanandroid.ui
 
-import com.xfy.wanandroid.base.AppBaseActivity
-import com.example.baselibrary.base.IBasePresenter
-import com.xfy.wanandroid.ui.main.MainActivity
-import io.reactivex.Observable
-import io.reactivex.disposables.Disposable
-import java.util.concurrent.TimeUnit
 import android.Manifest
 import android.os.Bundle
-import com.example.baselibrary.utils.PrefUtils
+import com.example.baselibrary.base.IBasePresenter
+import com.example.baselibrary.utils.MmkvUtils
 import com.xfy.wanandroid.R
+import com.xfy.wanandroid.base.AppBaseActivity
 import com.xfy.wanandroid.constants.Constants
 import com.xfy.wanandroid.entity.IntegralEntity
 import com.xfy.wanandroid.http.HttpDefaultObserver
 import com.xfy.wanandroid.http.RetrofitHelper
-import com.xfy.wanandroid.utils.DialogUtils
 import com.xfy.wanandroid.proxy.IConfirmClickCallBack
+import com.xfy.wanandroid.ui.main.MainActivity
+import com.xfy.wanandroid.utils.DialogUtils
+import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import pub.devrel.easypermissions.AfterPermissionGranted
 import pub.devrel.easypermissions.EasyPermissions
 import pub.devrel.easypermissions.EasyPermissions.PermissionCallbacks
+import java.util.concurrent.TimeUnit
 
 
 /**
@@ -118,8 +118,9 @@ class SplashActivity : AppBaseActivity<IBasePresenter<*>>(), PermissionCallbacks
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(object : HttpDefaultObserver<IntegralEntity>() {
                 override fun onSuccess(t: IntegralEntity) {
-                    PrefUtils.setObject(Constants.INTEGRAL_INFO,t)
+                    MmkvUtils.encode(Constants.INTEGRAL_INFO, t)
                 }
+
                 override fun onError(errorMsg: String) {
                 }
 

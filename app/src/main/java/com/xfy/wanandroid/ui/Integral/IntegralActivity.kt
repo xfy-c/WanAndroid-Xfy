@@ -1,23 +1,23 @@
 package com.xfy.wanandroid.ui.Integral
 
+import android.animation.ValueAnimator
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
+import android.view.animation.DecelerateInterpolator
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.xfy.wanandroid.R
+import com.example.baselibrary.utils.MmkvUtils
+import com.example.baselibrary.utils.ToastUtils
 import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
+import com.xfy.wanandroid.R
 import com.xfy.wanandroid.adapter.IntegralAdapter
 import com.xfy.wanandroid.base.AppBaseActivity
+import com.xfy.wanandroid.constants.Constants
+import com.xfy.wanandroid.entity.IntegralEntity
 import com.xfy.wanandroid.entity.IntegralRecordEntity
 import com.xfy.wanandroid.weight.ReloadListener
 import kotlinx.android.synthetic.main.activity_integral.*
-import android.animation.ValueAnimator
-import com.xfy.wanandroid.constants.Constants
-import com.xfy.wanandroid.entity.IntegralEntity
-import android.view.animation.DecelerateInterpolator
-import com.example.baselibrary.utils.PrefUtils
-import com.example.baselibrary.utils.ToastUtils
 
 
 /**
@@ -28,15 +28,16 @@ import com.example.baselibrary.utils.ToastUtils
 class IntegralActivity : AppBaseActivity<IntegralContract.Presenter<IntegralContract.View>>()
     ,IntegralContract.View , OnLoadMoreListener, ReloadListener {
 
-    private var integralRecordEntity: IntegralRecordEntity? = null;
-    private var integralAdapter:IntegralAdapter? = null
+    private var integralRecordEntity: IntegralRecordEntity? = null
+    private var integralAdapter: IntegralAdapter? = null
     private var integralEntity:IntegralEntity? = null
     private var integralList = mutableListOf<IntegralRecordEntity.DatasBean>()
     private var pageNum = 1
 
     override fun init(savedInstanceState: Bundle?) {
-        PrefUtils.getObject(Constants.INTEGRAL_INFO)?.let {
-            integralEntity = PrefUtils.getObject(Constants.INTEGRAL_INFO) as IntegralEntity?
+        MmkvUtils.decodeParcelable(Constants.INTEGRAL_INFO, IntegralEntity::class.java)?.let {
+            integralEntity =
+                MmkvUtils.decodeParcelable(Constants.INTEGRAL_INFO, IntegralEntity::class.java)
         }
         initView()
         loadingTip.loading()

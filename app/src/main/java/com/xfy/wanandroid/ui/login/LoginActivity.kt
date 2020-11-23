@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.view.View
-import com.example.baselibrary.utils.PrefUtils
+import com.example.baselibrary.utils.MmkvUtils
 import com.example.baselibrary.utils.ToastUtils
 import com.xfy.wanandroid.R
 import com.xfy.wanandroid.base.AppBaseActivity
@@ -92,7 +92,7 @@ class LoginActivity : AppBaseActivity<LoginContract.Presenter<LoginContract.View
 
 
     override fun loginSuccess() {
-        PrefUtils.setBoolean(Constants.LOGIN,true)
+        MmkvUtils.encode(Constants.LOGIN, true)
         finish()
     }
 

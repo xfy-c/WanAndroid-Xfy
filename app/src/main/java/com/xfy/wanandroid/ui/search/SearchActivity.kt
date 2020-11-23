@@ -14,26 +14,21 @@ import android.widget.RelativeLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import com.example.baselibrary.utils.KeyBoardUtil
-import com.example.baselibrary.utils.PrefUtils
-import com.example.baselibrary.utils.ToastUtils
-import com.example.baselibrary.utils.UIUtils
-import com.xfy.wanandroid.R
+import com.example.baselibrary.utils.*
 import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
+import com.xfy.wanandroid.R
 import com.xfy.wanandroid.adapter.ArticleAdapter
 import com.xfy.wanandroid.adapter.OnCollectClickListener
 import com.xfy.wanandroid.base.AppBaseActivity
 import com.xfy.wanandroid.constants.Constants
 import com.xfy.wanandroid.entity.ArticleEntity
-import com.xfy.wanandroid.utils.DialogUtils
 import com.xfy.wanandroid.proxy.IConfirmClickCallBack
 import com.xfy.wanandroid.ui.web.WebActivity
 import com.xfy.wanandroid.utils.AppManager
+import com.xfy.wanandroid.utils.DialogUtils
 import com.xfy.wanandroid.weight.ReloadListener
 import kotlinx.android.synthetic.main.activity_search.*
-import kotlinx.android.synthetic.main.activity_search.loadingTip
-import kotlinx.android.synthetic.main.activity_search.smartRefresh
 
 /**
  * des搜索界面
@@ -58,10 +53,10 @@ class SearchActivity : AppBaseActivity<SearchContract.Presenter<SearchContract.V
     private var currentPosition = 0
 
     override fun init(savedInstanceState: Bundle?) {
-        recordList = if (PrefUtils.getObject(Constants.SEARCH_RECORD)==null){
+        recordList = if (MmkvUtils.decodeList(Constants.SEARCH_RECORD) == null) {
             mutableListOf()
-        }else{
-            PrefUtils.getObject(Constants.SEARCH_RECORD) as MutableList<String>?
+        } else {
+            MmkvUtils.decodeList(Constants.SEARCH_RECORD) as MutableList<String>?
         }
         initView()
     }
@@ -352,7 +347,7 @@ class SearchActivity : AppBaseActivity<SearchContract.Presenter<SearchContract.V
 
     override fun onDestroy() {
         super.onDestroy()
-        PrefUtils.setObject(Constants.SEARCH_RECORD,recordList)
+        MmkvUtils.encodeList(Constants.SEARCH_RECORD, recordList)
     }
 
     override fun createPresenter(): SearchContract.Presenter<SearchContract.View>? {

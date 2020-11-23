@@ -42,6 +42,7 @@ ext {
     permissionVersion = "3.0.0"
     labelsViewVersion = "1.6.1"
     cookieVersion = "v1.0.1"
+    mmkvVersion="1.2.5"
 }
 
 task clean(type: Delete) {
