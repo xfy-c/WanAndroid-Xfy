@@ -8,7 +8,7 @@ import java.io.*
 import java.util.*
 
 /**
- * SharePreference封装
+ * Mmkv封装
  *
  * @author xfy
  */
